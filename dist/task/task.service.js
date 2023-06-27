@@ -11,12 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskService = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
-const types_1 = require("@typegoose/typegoose/lib/types");
 const task_model_1 = require("./model/task.model");
 let TaskService = exports.TaskService = class TaskService {
     constructor(taskModel) {
@@ -40,6 +38,6 @@ let TaskService = exports.TaskService = class TaskService {
 exports.TaskService = TaskService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, nestjs_typegoose_1.InjectModel)(task_model_1.TaskModel)),
-    __metadata("design:paramtypes", [typeof (_a = typeof types_1.ModelType !== "undefined" && types_1.ModelType) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [Object])
 ], TaskService);
 //# sourceMappingURL=task.service.js.map

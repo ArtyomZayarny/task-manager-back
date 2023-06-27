@@ -6,7 +6,7 @@ const getMongoConfig = async (configService) => {
 };
 exports.getMongoConfig = getMongoConfig;
 const getMongoString = (configService) => {
-    return `mongodb+srv://${configService.get("MONGO_LOGIN")}:${configService.get("MONGO_PASSWORD")}@cluster0.formhkq.mongodb.net/${configService.get("MONGO_DATABASE_NAME")}`;
+    return 'mongodb://mongo:XoYFWKxU8347wE9SsAjO@containers-us-west-41.railway.app:5537';
 };
 const getMongoOptions = () => ({
     useNewUrlParser: true,

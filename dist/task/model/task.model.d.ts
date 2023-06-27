@@ -1,3 +1,4 @@
+/// <reference types="mongoose/types/types" />
 import { Base, TimeStamps } from "@typegoose/typegoose/lib/defaultClasses";
 import { Types } from "mongoose";
 export interface TaskModel extends Base {
