@@ -19,7 +19,7 @@ const getMongoString = (configService: ConfigService) => {
  // mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
 
 
- return 'mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200';
+ return 'mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200/nest-task-db';
 };
 
 const getMongoOptions = () => ({
