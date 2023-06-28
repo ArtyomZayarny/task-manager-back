@@ -6,7 +6,7 @@ const getMongoConfig = async (configService) => {
 };
 exports.getMongoConfig = getMongoConfig;
 const getMongoString = (configService) => {
-    return 'mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200/nest-task-db';
+    return 'mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200';
 };
 const getMongoOptions = () => ({
     useNewUrlParser: true,
