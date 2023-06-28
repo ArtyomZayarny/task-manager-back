@@ -15,7 +15,7 @@ const getMongoString = (configService: ConfigService) => {
   // return `mongodb+srv://${configService.get("MONGO_LOGIN")}:${configService.get(
   //   "MONGO_PASSWORD"
   // )}@cluster0.formhkq.mongodb.net/${configService.get("MONGO_DATABASE_NAME")}`;
-  return 'mongodb://mongo:XoYFWKxU8347wE9SsAjO@containers-us-west-41.railway.app:5537'
+ return `${`mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200`}/${configService.get("MONGO_DATABASE_NAME")}`
 };
 
 const getMongoOptions = () => ({
