@@ -13,9 +13,8 @@ exports.TaskModel = void 0;
 const typegoose_1 = require("@typegoose/typegoose");
 const defaultClasses_1 = require("@typegoose/typegoose/lib/defaultClasses");
 const mongoose_1 = require("mongoose");
-class TaskModel extends defaultClasses_1.TimeStamps {
-}
-exports.TaskModel = TaskModel;
+let TaskModel = exports.TaskModel = class TaskModel extends defaultClasses_1.TimeStamps {
+};
 __decorate([
     (0, typegoose_1.prop)(),
     __metadata("design:type", String)
@@ -32,4 +31,11 @@ __decorate([
     (0, typegoose_1.prop)(),
     __metadata("design:type", mongoose_1.Types.ObjectId)
 ], TaskModel.prototype, "userId", void 0);
+exports.TaskModel = TaskModel = __decorate([
+    (0, typegoose_1.modelOptions)({
+        options: {
+            allowMixed: typegoose_1.Severity.ALLOW
+        }
+    })
+], TaskModel);
 //# sourceMappingURL=task.model.js.map
