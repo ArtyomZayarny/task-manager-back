@@ -1,7 +1,6 @@
 import { ConfigService } from '@nestjs/config';
-import { Strategy } from 'passport-local';
 import { UserModel } from '../user.model';
-declare const JwtStrategy_base: new (...args: any[]) => Strategy;
+declare const JwtStrategy_base: new (...args: any[]) => any;
 export declare class JwtStrategy extends JwtStrategy_base {
     private readonly configService;
     constructor(configService: ConfigService);

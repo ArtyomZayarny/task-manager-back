@@ -6,7 +6,7 @@ const getMongoConfig = async (configService) => {
 };
 exports.getMongoConfig = getMongoConfig;
 const getMongoString = (configService) => {
-    return 'mongodb://mongo:c6vjuyZYwFyi4MJpPiFv@containers-us-west-158.railway.app:6200';
+    return "mongodb+srv://vercel-admin-user:UjsUmHC2HXemn4q2@cluster0.lx4zzfj.mongodb.net/task-manager";
 };
 const getMongoOptions = () => ({
     useNewUrlParser: true,

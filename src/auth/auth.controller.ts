@@ -15,7 +15,7 @@ export class AuthController {
 
   @Post("register")
   async register(@Body() dto: AuthDto) {
-    console.log('dto', dto)
+    console.log("dto!!", dto);
     const oldUser = await this.authService.findUser(dto.login);
     if (oldUser) {
       throw new BadRequestException(USER_ALREADY_REGISTERED_ERROR);

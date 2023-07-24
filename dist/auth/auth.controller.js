@@ -22,7 +22,7 @@ let AuthController = exports.AuthController = class AuthController {
         this.authService = authService;
     }
     async register(dto) {
-        console.log('dto', dto);
+        console.log("dto!!", dto);
         const oldUser = await this.authService.findUser(dto.login);
         if (oldUser) {
             throw new common_1.BadRequestException(auth_constants_1.USER_ALREADY_REGISTERED_ERROR);
