@@ -11,7 +11,9 @@ export const getMongoConfig = async (
 };
 
 const getMongoString = (configService: ConfigService) => {
-  return "mongodb+srv://vercel-admin-user:UjsUmHC2HXemn4q2@cluster0.lx4zzfj.mongodb.net/task-manager";
+  const login = configService.get("MONGO_LOGIN");
+  const password = configService.get("MONGO_PASSWORD");
+  return `mongodb+srv://${login}:${password}@cluster0.hkyhoiy.mongodb.net/trello-clone`;
 };
 
 const getMongoOptions = () => ({
